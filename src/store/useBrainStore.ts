@@ -9,7 +9,7 @@ interface BrainStore {
     isRotationEnabled: boolean;
     isUIHidden: boolean;
 
-    
+
     selectRegion: (id: string | null) => void;
     setHoveredRegion: (id: string | null) => void;
     setPathology: (id: string | null) => void;
@@ -25,12 +25,12 @@ export const useBrainStore = create<BrainStore>((set) => ({
     activePathologyId: null,
     searchTerm: '',
     isSidebarOpen: true,
-    isRotationEnabled: true, 
+    isRotationEnabled: true,
     isUIHidden: false,
 
-    selectRegion: (id) => set({ selectedRegionId: id, activePathologyId: null, isSidebarOpen: !!id }), 
+    selectRegion: (id) => set({ selectedRegionId: id, activePathologyId: null, isSidebarOpen: !!id }),
     setHoveredRegion: (id) => set({ hoveredRegionId: id }),
-    setPathology: (id) => set({ activePathologyId: id, selectedRegionId: null, isSidebarOpen: true }), 
+    setPathology: (id) => set({ activePathologyId: id, selectedRegionId: null, isSidebarOpen: true }),
     setSearch: (term) => set({ searchTerm: term }),
     toggleSidebar: (isOpen) => set((state) => ({
         isSidebarOpen: isOpen !== undefined ? isOpen : !state.isSidebarOpen
