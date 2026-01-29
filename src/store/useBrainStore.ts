@@ -25,7 +25,7 @@ export const useBrainStore = create<BrainStore>((set) => ({
     activePathologyId: null,
     searchTerm: '',
     isSidebarOpen: true,
-    isRotationEnabled: true,
+    isRotationEnabled: false,
     isUIHidden: false,
 
     selectRegion: (id) => set({ selectedRegionId: id, activePathologyId: null, isSidebarOpen: !!id }),
