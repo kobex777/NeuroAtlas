@@ -1,8 +1,8 @@
 import { Canvas, useFrame, ThreeEvent, useThree } from '@react-three/fiber';
-import { OrbitControls, useGLTF, AdaptiveDpr, AdaptiveEvents, PerformanceMonitor } from '@react-three/drei';
+import { OrbitControls, useGLTF, AdaptiveDpr, AdaptiveEvents } from '@react-three/drei';
 import { EffectComposer, Vignette, Noise, SSAO } from '@react-three/postprocessing';
 import * as THREE from 'three';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { GradientClayMaterial } from './GradientClayMaterial';
 import { easing } from 'maath';
 import { useBrainStore } from '../../store/useBrainStore';
@@ -265,12 +265,10 @@ function CameraRig() {
 
 export function Scene() {
     const { selectedRegionId, isRotationEnabled } = useBrainStore();
-    const [dpr, setDpr] = useState(1.5);
 
     return (
         <div className="w-full h-full relative z-10">
             <Canvas
-                dpr={dpr}
                 camera={{ position: [0, 0, 600], fov: 45 }}
                 shadows
                 gl={{
@@ -330,7 +328,6 @@ export function Scene() {
                 <CameraRig />
 
                 { }
-                <PerformanceMonitor onIncline={() => setDpr(2)} onDecline={() => setDpr(1)} />
                 <AdaptiveDpr pixelated />
                 <AdaptiveEvents />
 
