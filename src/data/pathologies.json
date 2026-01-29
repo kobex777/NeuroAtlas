@@ -1,0 +1,476 @@
+[
+    {
+        "id": "alzheimers",
+        "name": "Alzheimer's Disease",
+        "mainCategory": "Pathologies",
+        "subCategory": "Neurodegenerative Diseases",
+        "group": "Dementia & Memory Disorders",
+        "description": "Alzheimer’s disease (AD) is a progressive neurodegenerative disorder that primarily affects memory, thinking, and behavior, accounting for 60-80% of dementia cases [1]. It is pathologically characterized by the accumulation of extracellular beta-amyloid plaques and intracellular tau neurofibrillary tangles, which lead to synaptic failure and neuronal death [2]. The atrophy typically begins in the medial temporal lobe, specifically the entorhinal cortex and hippocampus, impairing the formation of new episodic memories [3]. As the disease progresses, degeneration spreads to the parietal and frontal lobes, causing disorientation, language deficits (aphasia), and executive dysfunction [2]. In advanced stages, widespread cortical atrophy occurs, severely impacting daily functioning and autonomy [1, 3].",
+        "affectedRegions": [
+            {
+                "id": "hippocampus",
+                "impact": "high"
+            },
+            {
+                "id": "entorhinal",
+                "impact": "high"
+            },
+            {
+                "id": "parahippocampal",
+                "impact": "medium"
+            },
+            {
+                "id": "temporalpole",
+                "impact": "medium"
+            },
+            {
+                "id": "precuneus",
+                "impact": "low"
+            },
+            {
+                "id": "posteriorcingulate",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Alzheimer's Association. 2023 Alzheimer's Disease Facts and Figures. Alzheimers Dement. 2023;19(4):1598-1695.",
+            "Kandel ER, Schwartz JH, Jessell TM, et al. Principles of Neural Science. 6th ed. McGraw-Hill Education; 2021: 1320-1340.",
+            "Braak H, Braak E. Neuropathological stageing of Alzheimer-related changes. Acta Neuropathol. 1991;82(4):239-259."
+        ]
+    },
+    {
+        "id": "parkinsons",
+        "name": "Parkinson's Disease",
+        "mainCategory": "Pathologies",
+        "subCategory": "Neurodegenerative Diseases",
+        "group": "Movement & Motor System Degeneration",
+        "description": "Parkinson’s disease (PD) is a progressive movement disorder characterized pathologically by the degeneration of dopaminergic neurons in the substantia nigra pars compacta, a component of the basal ganglia [1]. The loss of dopamine results in an imbalance in the direct and indirect pathways of the basal ganglia, leading to the cardinal motor symptoms: resting tremor, bradykinesia (slowness of movement), rigidity, and postural instability [2]. Lewy bodies, which are abnormal aggregates of alpha-synuclein protein, are the histological hallmark of the disease [3]. While primarily a motor disorder, PD also involves non-motor symptoms such as cognitive impairment, depression, and autonomic dysfunction, reflecting widespread pathology affecting the brainstem, olfactory bulb, and cortical regions in later stages [1, 3].",
+        "affectedRegions": [
+            {
+                "id": "substantianigra",
+                "impact": "high"
+            },
+            {
+                "id": "putamen",
+                "impact": "high"
+            },
+            {
+                "id": "caudate",
+                "impact": "medium"
+            },
+            {
+                "id": "pallidum",
+                "impact": "medium"
+            },
+            {
+                "id": "precentral",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Poewe W, Seppi K, Tanner CM, et al. Parkinson disease. Nat Rev Dis Primers. 2017;3:17013.",
+            "Bear MF, Connors BW, Paradiso MA. Neuroscience: Exploring the Brain. 4th ed. Wolters Kluwer; 2016: 510-525.",
+            "Goedert M, Spillantini MG, Del Tredici K, Braak H. 100 years of Lewy pathology. Nat Rev Neurol. 2013;9(1):13-24."
+        ]
+    },
+    {
+        "id": "ftd",
+        "name": "Frontotemporal Dementia",
+        "mainCategory": "Pathologies",
+        "subCategory": "Neurodegenerative Diseases",
+        "group": "Executive & Behavioral Atrophy",
+        "description": "Frontotemporal dementia (FTD) encompasses a group of heterogeneous neurodegenerative disorders characterized by progressive atrophy of the frontal and temporal lobes [1]. Unlike Alzheimer's, memory is often preserved in the early stages; instead, patients present with profound changes in personality, social behavior, and language [2]. The behavioral variant (bvFTD) involves the prefrontal cortex and anterior cingulate, leading to disinhibition, apathy, and loss of empathy. Language variants (primary progressive aphasia) affect the anterior temporal lobes and inferior frontal gyrus, impairing word knowledge or speech production [3]. Pathology involves the accumulation of abnormal proteins such as tau or TDP-43 within neurons and glia [1].",
+        "affectedRegions": [
+            {
+                "id": "frontalpole",
+                "impact": "high"
+            },
+            {
+                "id": "rostralanteriorcingulate",
+                "impact": "high"
+            },
+            {
+                "id": "temporalpole",
+                "impact": "medium"
+            },
+            {
+                "id": "medialorbitofrontal",
+                "impact": "medium"
+            },
+            {
+                "id": "insula",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Bang J, Spina S, Miller BL. Frontotemporal dementia. Lancet. 2015;386(10004):1672-1682.",
+            "Neary D, Snowden JS, Gustafson L, et al. Frontotemporal lobar degeneration: a consensus on clinical diagnostic criteria. Neurology. 1998;51(6):1546-1554.",
+            "Mesulam MM. Primary progressive aphasia and the language network: the 2013 H. Houston Merritt Lecture. Neurology. 2013;81(5):456-462."
+        ]
+    },
+    {
+        "id": "depression",
+        "name": "Major Depressive Disorder",
+        "mainCategory": "Pathologies",
+        "subCategory": "Mental Health & Psychiatric Disorders",
+        "group": "Mood & Emotional Regulation Disorders",
+        "description": "Major Depressive Disorder (MDD) is a complex mood disorder characterized by persistent sadness, anhedonia (loss of interest), and cognitive impairment [1]. Neuroimaging studies reveal functional and structural alterations in brain networks that regulate emotion and reward processing. Key findings include hyperactivity in the amygdala (emotional reactivity) and hypoactivity in the dorsolateral prefrontal cortex (cognitive control) [2]. The subgenual anterior cingulate cortex (Brodmann area 25) is often hyperactive and is a target for deep brain stimulation therapies [3]. Additionally, reduced volume in the hippocampus has been consistently observed, potentially linked to chronic stress and elevated cortisol levels affecting neurogenesis [1][2].",
+        "affectedRegions": [
+            {
+                "id": "anteriorcingulate",
+                "impact": "high"
+            },
+            {
+                "id": "amygdala",
+                "impact": "high"
+            },
+            {
+                "id": "hippocampus",
+                "impact": "medium"
+            },
+            {
+                "id": "medialorbitofrontal",
+                "impact": "medium"
+            },
+            {
+                "id": "insula",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Malhi GS, Mann JJ. Depression. Lancet. 2018;392(10161):2299-2312.",
+            "Drevets WC, Price JL, Furey ML. Brain structural and functional abnormalities in mood disorders: implications for neurocircuitry models of depression. Brain Struct Funct. 2008;213(1-2):93-118.",
+            "Mayberg HS, Lozano AM, Voon V, et al. Deep brain stimulation for treatment-resistant depression. Neuron. 2005;45(5):651-660."
+        ]
+    },
+    {
+        "id": "schizophrenia",
+        "name": "Schizophrenia",
+        "mainCategory": "Pathologies",
+        "subCategory": "Mental Health & Psychiatric Disorders",
+        "group": "Psychotic & Thought Disorders",
+        "description": "Schizophrenia is a severe chronic mental disorder characterized by distortions in thinking, perception, emotions, language, and behavior [1]. The pathophysiology involves dysregulation of dopaminergic and glutamatergic pathways. Structural abnormalities include enlarged lateral ventricles and reduced gray matter volume in the prefrontal cortex, superior temporal gyrus, and thalamus [2]. Disconnection between these regions (dysconnectivity) is thought to underlie symptoms like auditory hallucinations (linked to the auditory cortex) and delusions [3]. Cognitive deficits are associated with dysfunction in the dorsolateral prefrontal cortex, affecting working memory and executive control [1, 2].",
+        "affectedRegions": [
+            {
+                "id": "thalamus",
+                "impact": "high"
+            },
+            {
+                "id": "superiortemporal",
+                "impact": "high"
+            },
+            {
+                "id": "rostralmiddlefrontal",
+                "impact": "medium"
+            },
+            {
+                "id": "hippocampus",
+                "impact": "medium"
+            },
+            {
+                "id": "anteriorcingulate",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Owen MJ, Sawa A, Mortensen PB. Schizophrenia. Lancet. 2016;388(10039):86-97.",
+            "Shenton ME, Dickey CC, Frumin M, McCarley RW. A review of MRI findings in schizophrenia. Schizophr Res. 2001;49(1-2):1-52.",
+            "Friston KJ. Dysconnectivity as a core feature of schizophrenia. J Psychiatry Neurosci. 1999;24(2):90-94."
+        ]
+    },
+    {
+        "id": "anxiety",
+        "name": "Generalized Anxiety Disorder",
+        "mainCategory": "Pathologies",
+        "subCategory": "Mental Health & Psychiatric Disorders",
+        "group": "Anxiety & Stress-Related Disorders",
+        "description": "Generalized Anxiety Disorder (GAD) involves excessive, uncontrollable worry about everyday events, accompanied by somatic symptoms like muscle tension and restlessness [1]. The neurobiology of GAD centers on the \"fear network,\" particularly the amygdala, which shows hyperresponsiveness to negative emotional stimuli [2]. This is often coupled with diminished top-down inhibitory control from the prefrontal cortex and anterior cingulate cortex, preventing the regulation of emotional responses [3]. The insula, responsible for interoception (sensing internal body states), is also hyperactive, contributing to the physical sensation of anxiety. Functional connectivity between the amygdala and prefrontal cortex is frequently disrupted in patients with GAD [2, 3].",
+        "affectedRegions": [
+            {
+                "id": "amygdala",
+                "impact": "high"
+            },
+            {
+                "id": "anteriorcingulate",
+                "impact": "medium"
+            },
+            {
+                "id": "insula",
+                "impact": "medium"
+            },
+            {
+                "id": "superiorfrontal",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Hoge EA, Ivkovic A, Fricchione GL. Generalized anxiety disorder: diagnosis and treatment. BMJ. 2012;345:e7500.",
+            "Etkin A, Prater KE, Schatzberg AF, Menon V, Greicius MD. Disrupted amygdalar subregion functional connectivity and evidence of a compensatory network in generalized anxiety disorder. Arch Gen Psychiatry. 2009;66(12):1361-1372.",
+            "Mochcovitch MD, da Rocha Freire RC, Garcia RF, Nardi AE. A systematic review of fMRI studies in generalized anxiety disorder: evaluating its neural and cognitive basis. J Affect Disord. 2014;167:336-342."
+        ]
+    },
+    {
+        "id": "stroke",
+        "name": "Middle Cerebral Artery (MCA) Stroke",
+        "mainCategory": "Pathologies",
+        "subCategory": "Cerebrovascular & Acute Injury",
+        "group": "Vascular & Stroke Impacts",
+        "description": "The Middle Cerebral Artery (MCA) is the most common site for ischemic stroke [1]. It supplies a vast territory of the lateral cerebral cortex, including the primary motor and sensory areas for the face and upper extremities, as well as key language centers in the dominant hemisphere [2]. Occlusion of the MCA typically results in contralateral hemiplegia (paralysis) and hemianesthesia (loss of sensation) of the face and arm. If the left (dominant) hemisphere is affected, it often leads to global aphasia (affecting both Broca's and Wernicke's areas), causing profound difficulties in speech production and comprehension [3]. Visual field deficits, such as homonymous hemianopsia, may also occur due to damage to the optic radiations [1].",
+        "affectedRegions": [
+            {
+                "id": "precentral",
+                "impact": "high"
+            },
+            {
+                "id": "postcentral",
+                "impact": "high"
+            },
+            {
+                "id": "parsopercularis",
+                "impact": "high"
+            },
+            {
+                "id": "supramarginal",
+                "impact": "medium"
+            },
+            {
+                "id": "insula",
+                "impact": "medium"
+            },
+            {
+                "id": "inferiorparietal",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Blumenfeld H. Neuroanatomy through Clinical Cases. 2nd ed. Sinauer Associates; 2010: 400-420.",
+            "Osborn AG. Osborn's Brain: Imaging, Pathology, and Anatomy. 2nd ed. Elsevier; 2017: 250-275.",
+            "Warlow CP, et al. Stroke: Practical Management. 3rd ed. Blackwell Publishing; 2008: 120-135."
+        ]
+    },
+    {
+        "id": "cte",
+        "name": "Chronic Traumatic Encephalopathy (CTE)",
+        "mainCategory": "Pathologies",
+        "subCategory": "Cerebrovascular & Acute Injury",
+        "group": "Traumatic & Physical Impact (TBI)",
+        "description": "Chronic Traumatic Encephalopathy (CTE) is a neurodegenerative disease linked to repeated head impacts, commonly found in contact sport athletes and military veterans [1]. The condition is characterized by the widespread accumulation of hyperphosphorylated tau protein in neurofibrillary tangles, often clustered around small blood vessels in the depths of cortical sulci [2]. The pathology typically begins in the frontal lobes, leading to symptoms of impulse control problems, aggression, and depression. As degeneration progresses to the temporal lobes (medial temporal structures) and other regions, severe memory loss, confusion, and dementia develop [3]. The distribution of damage often reflects biomechanical forces, affecting the frontal and temporal poles due to coup-contrecoup injury mechanisms [1].",
+        "affectedRegions": [
+            {
+                "id": "frontalpole",
+                "impact": "high"
+            },
+            {
+                "id": "temporalpole",
+                "impact": "high"
+            },
+            {
+                "id": "superiorfrontal",
+                "impact": "medium"
+            },
+            {
+                "id": "hippocampus",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "McKee AC, Cantu RC, Nowinski CJ, et al. Chronic traumatic encephalopathy in athletes: progressive tauopathy after repetitive head injury. J Neuropathol Exp Neurol. 2009;68(7):709-735.",
+            "Omalu B. Chronic traumatic encephalopathy. Prog Neurol Surg. 2014;28:38-49.",
+            "Stern RA, Daneshvar DH, Baugh CM, et al. Clinical presentation of chronic traumatic encephalopathy. Neurology. 2013;81(13):1122-1129."
+        ]
+    },
+    {
+        "id": "autism",
+        "name": "Autism Spectrum Disorder",
+        "mainCategory": "Pathologies",
+        "subCategory": "Neurodevelopmental Disorders",
+        "group": "Social & Communication Development",
+        "description": "Autism Spectrum Disorder (ASD) is a developmental condition impacting social communication and behavior [1]. Neuroanatomical studies suggest altered brain growth trajectories, often characterized by early brain overgrowth followed by arrested growth or degeneration [2]. Key functional deficits map to the \"social brain\" network. The fusiform gyrus shows hypoactivation during face processing, contributing to difficulties in reading facial expressions [3]. The superior temporal sulcus (biological motion processing) and the amygdala (emotional significance) are also consistently implicated. Additionally, atypical connectivity in the default mode network may relate to deficits in theory of mind (understanding others' perspectives) [2, 3].",
+        "affectedRegions": [
+            {
+                "id": "fusiform",
+                "impact": "high"
+            },
+            {
+                "id": "superiortemporal",
+                "impact": "high"
+            },
+            {
+                "id": "amygdala",
+                "impact": "medium"
+            },
+            {
+                "id": "parsopercularis",
+                "impact": "medium"
+            },
+            {
+                "id": "cerebellum",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Lord C, Elsabbagh M, Baird G, Veenstra-VanderWeele J. Autism spectrum disorder. Lancet. 2018;392(10146):508-520.",
+            "Courchesne E, et al. Mapping early brain development in autism. Neuron. 2007;56(2):399-413.",
+            "Pelphrey KA, Shultz S, Hudac CM, Vander Wyk BC. Research review: Constraining heterogeneity: the social brain and its development in autism spectrum disorder. J Child Psychol Psychiatry. 2011;52(6):631-644."
+        ]
+    },
+    {
+        "id": "adhd",
+        "name": "ADHD",
+        "mainCategory": "Pathologies",
+        "subCategory": "Neurodevelopmental Disorders",
+        "group": "Attention & Executive Function Development",
+        "description": "Attention-Deficit/Hyperactivity Disorder (ADHD) is characterized by a persistent pattern of inattention and/or hyperactivity-impulsivity that interferes with functioning [1]. The core deficits are linked to dysfunction in fronto-striatal-cerebellar networks. Volumetric reductions and functional hypoactivity are frequently observed in the prefrontal cortex (responsible for inhibition and attention regulation) and the basal ganglia, specifically the caudate nucleus and putamen (motor control and reward processing) [2]. The anterior cingulate cortex, involved in conflict monitoring and error detection, also shows atypical activation. Recent research also implicates the cerebellum in the timing and coordination of cognitive processes [3].",
+        "affectedRegions": [
+            {
+                "id": "rostralmiddlefrontal",
+                "impact": "high"
+            },
+            {
+                "id": "caudate",
+                "impact": "high"
+            },
+            {
+                "id": "anteriorcingulate",
+                "impact": "medium"
+            },
+            {
+                "id": "cerebellum",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Faraone SV, Asherson P, Banaschewski T, et al. Attention-deficit/hyperactivity disorder. Nat Rev Dis Primers. 2015;1:15020.",
+            "Castellanos FX, Proal E. Large-scale brain systems in ADHD: beyond the prefrontal-striatal model. Trends Cogn Sci. 2012;16(1):17-26.",
+            "Hart H, Radua J, Nakao T, et al. Meta-analysis of functional magnetic resonance imaging studies of inhibition and attention in attention-deficit/hyperactivity disorder. JAMA Psychiatry. 2013;70(2):185-198."
+        ]
+    },
+    {
+        "id": "homunculus",
+        "name": "Homunculus (Motor & Sensory Strips)",
+        "mainCategory": "Sensory & Functional Mapping",
+        "subCategory": "Primary Motor & Sensory Input",
+        "group": "Primary Cortices",
+        "description": "The cortical homunculus is a distorted topographic representation of the human body found within the motor and sensory cortices [1]. The primary motor cortex (M1), located in the precentral gyrus, controls voluntary muscle movement, with large areas dedicated to body parts requiring fine motor control, such as the hands and face [2]. Immediately posterior, across the central sulcus, lies the primary somatosensory cortex (S1) in the postcentral gyrus. S1 processes tactile information, proprioception, and temperature [3]. The organization is somatotopic, meaning specific neurons correspond to specific body regions, mapped as if a small person (\"homunculus\") were draped over the cortex [1].",
+        "affectedRegions": [
+            {
+                "id": "precentral",
+                "impact": "high"
+            },
+            {
+                "id": "postcentral",
+                "impact": "high"
+            },
+            {
+                "id": "paracentral",
+                "impact": "medium"
+            },
+            {
+                "id": "superiorparietal",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Penfield W, Rasmussen T. The Cerebral Cortex of Man: A Clinical Study of Localization of Function. Macmillan; 1950.",
+            "Kandel ER, Schwartz JH, Jessell TM, et al. Principles of Neural Science. 6th ed. McGraw-Hill Education; 2021: 765-785.",
+            "Buonomano DV, Merzenich MM. Cortical plasticity: from synapses to maps. Annu Rev Neurosci. 1998;21:149-186."
+        ]
+    },
+    {
+        "id": "visualstream",
+        "name": "Visual Stream",
+        "mainCategory": "Sensory & Functional Mapping",
+        "subCategory": "Visual & Auditory Processing",
+        "group": "Visual Networks",
+        "description": "Visual processing begins in the primary visual cortex (V1) located in the calcarine sulcus of the occipital lobe, where basic features like orientation and edges are analyzed [1]. From there, information flows into two distinct pathways. The dorsal stream (\"where\" pathway), projecting to the parietal lobe, processes spatial location and motion (middle temporal area, V5). The ventral stream (\"what\" pathway), projecting to the inferior temporal lobe and fusiform gyrus, is responsible for object recognition, face perception, and color processing [2]. Damage to specific areas can lead to selective deficits like prosopagnosia (face blindness) or akinetopsia (motion blindness) [3].",
+        "affectedRegions": [
+            {
+                "id": "pericalcarine",
+                "impact": "high"
+            },
+            {
+                "id": "lingual",
+                "impact": "high"
+            },
+            {
+                "id": "fusiform",
+                "impact": "medium"
+            },
+            {
+                "id": "middletemporal",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Hubel DH, Wiesel TN. Brain mechanisms of vision. Sci Am. 1979;241(3):150-162.",
+            "Goodale MA, Milner AD. Separate visual pathways for perception and action. Trends Neurosci. 1992;15(1):20-25.",
+            "Zeki S. A Vision of the Brain. Blackwell Scientific; 1993."
+        ]
+    },
+    {
+        "id": "auditorynetwork",
+        "name": "Auditory Network",
+        "mainCategory": "Sensory & Functional Mapping",
+        "subCategory": "Visual & Auditory Processing",
+        "group": "Auditory Networks",
+        "description": "The primary auditory cortex (A1) resides in the transverse temporal gyri (Heschl’s gyri) within the lateral sulcus, responsible for the conscious perception of sound pitch and intensity [1]. Surrounding this is the secondary auditory cortex in the superior temporal gyrus, which processes more complex auditory patterns like speech and melody [2]. In the dominant hemisphere (usually left), Wernicke’s area (posterior part of the superior temporal gyrus) is critical for language comprehension. The planum temporale, located just posterior to Heschl's gyri, typically shows significant leftward asymmetry and is integral to auditory processing and language function [3].",
+        "affectedRegions": [
+            {
+                "id": "transversetemporal",
+                "impact": "high"
+            },
+            {
+                "id": "superiortemporal",
+                "impact": "high"
+            },
+            {
+                "id": "bankssts",
+                "impact": "medium"
+            },
+            {
+                "id": "inferiorparietal",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Pickles JO. An Introduction to the Physiology of Hearing. 4th ed. Emerald Group Publishing; 2012.",
+            "Hickok G, Poeppel D. The cortical organization of speech processing. Nat Rev Neurosci. 2007;8(5):393-402.",
+            "Galaburda AM, Sanides F, Geschwind N. Human brain cytoarchitectonics: the sylvian fissure and the supratemporal plane. Arch Neurol. 1978;35(12):812-817."
+        ]
+    },
+    {
+        "id": "dmn",
+        "name": "Default Mode Network (DMN)",
+        "mainCategory": "Sensory & Functional Mapping",
+        "subCategory": "The Default Mode Network (DMN)",
+        "group": "Resting State Hubs",
+        "description": "The Default Mode Network (DMN) is a large-scale brain network that is highly active when a person is at wakeful rest and not focused on the outside world [1]. It is deactivated during specific goal-directed tasks. The DMN is involved in self-referential mental activity, such as autobiographical memory, envisioning the future, and \"theory of mind\" (reflecting on others' thoughts) [2]. The core hubs of this network include the posterior cingulate cortex (PCC), the precuneus, and the medial prefrontal cortex (mPFC). Dysregulation of the DMN has been implicated in various disorders, including Alzheimer's disease (where amyloid plaques accumulate early in DMN hubs) and depression (linked to rumination) [3].",
+        "affectedRegions": [
+            {
+                "id": "posteriorcingulate",
+                "impact": "high"
+            },
+            {
+                "id": "precuneus",
+                "impact": "high"
+            },
+            {
+                "id": "medialorbitofrontal",
+                "impact": "high"
+            },
+            {
+                "id": "isthmuscingulate",
+                "impact": "medium"
+            },
+            {
+                "id": "middletemporal",
+                "impact": "low"
+            }
+        ],
+        "formattedReferences": [
+            "Raichle ME, MacLeod AM, Snyder AZ, et al. A default mode of brain function. Proc Natl Acad Sci U S A. 2001;98(2):676-682.",
+            "Buckner RL, Andrews-Hanna JR, Schacter DL. The brain's default network: anatomy, function, and relevance to disease. Ann N Y Acad Sci. 2008;1124:1-38.",
+            "Greicius MD, Srivastava G, Reiss AL, Menon V. Default-mode network activity distinguishes Alzheimer's disease from healthy aging: evidence from functional MRI. Proc Natl Acad Sci U S A. 2004;101(13):4637-4642."
+        ]
+    }
+]

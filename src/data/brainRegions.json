@@ -1,0 +1,410 @@
+[
+    {
+        "id": "bankssts",
+        "name": "Banks of the Superior Temporal Sulcus",
+        "latinName": "Sulcus temporalis superior",
+        "category": "Temporal Lobe",
+        "description": "Part of the temporal lobe, involved in social cognition and processing of biological motion.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.bankssts.obj",
+            "right": "models/brain/rh.pial.DK.bankssts.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "caudalanteriorcingulate",
+        "name": "Caudal Anterior Cingulate",
+        "latinName": "Pars caudalis corticis cingularis anterioris",
+        "category": "Limbic",
+        "description": "Involved in cognitive control, error detection, and emotional regulation.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.caudalanteriorcingulate.obj",
+            "right": "models/brain/rh.pial.DK.caudalanteriorcingulate.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "caudalmiddlefrontal",
+        "name": "Caudal Middle Frontal Gyrus",
+        "latinName": "Gyrus frontalis medius (pars caudalis)",
+        "category": "Frontal Lobe",
+        "description": "Part of the dorsolateral prefrontal cortex, involved in executive functions like attention and working memory.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.caudalmiddlefrontal.obj",
+            "right": "models/brain/rh.pial.DK.caudalmiddlefrontal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "cuneus",
+        "name": "Cuneus",
+        "latinName": "Cuneus",
+        "category": "Occipital Lobe",
+        "description": "Involved in basic visual processing.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.cuneus.obj",
+            "right": "models/brain/rh.pial.DK.cuneus.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "entorhinal",
+        "name": "Entorhinal Cortex",
+        "latinName": "Cortex entorhinalis",
+        "category": "Limbic",
+        "description": "Main interface between the hippocampus and neocortex; critical for memory and spatial navigation.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.entorhinal.obj",
+            "right": "models/brain/rh.pial.DK.entorhinal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "frontalpole",
+        "name": "Frontal Pole",
+        "latinName": "Polus frontalis",
+        "category": "Frontal Lobe",
+        "description": "Proposed to be involved in high-order cognitive functions like strategic planning and multitasking.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.frontalpole.obj",
+            "right": "models/brain/rh.pial.DK.frontalpole.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "fusiform",
+        "name": "Fusiform Gyrus",
+        "latinName": "Gyrus fusiformis",
+        "category": "Temporal Lobe",
+        "description": "Critical for face recognition (FFA) and processing color information.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.fusiform.obj",
+            "right": "models/brain/rh.pial.DK.fusiform.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "inferiorparietal",
+        "name": "Inferior Parietal Lobule",
+        "latinName": "Lobulus parietalis inferior",
+        "category": "Parietal Lobe",
+        "description": "Involved in the perception regarding emotions in facial stimuli and interpretation of sensory information.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.inferiorparietal.obj",
+            "right": "models/brain/rh.pial.DK.inferiorparietal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "inferiortemporal",
+        "name": "Inferior Temporal Gyrus",
+        "latinName": "Gyrus temporalis inferior",
+        "category": "Temporal Lobe",
+        "description": "Involved in visual processing and object recognition.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.inferiortemporal.obj",
+            "right": "models/brain/rh.pial.DK.inferiortemporal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "insula",
+        "name": "Insula",
+        "latinName": "Insula",
+        "category": "Insula",
+        "description": "Involved in consciousness and plays a role in diverse functions usually linked to emotion or the regulation of the body's homeostasis.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.insula.obj",
+            "right": "models/brain/rh.pial.DK.insula.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "isthmuscingulate",
+        "name": "Isthmus of Cingulate Gyrus",
+        "latinName": "Isthmus gyrus cinguli",
+        "category": "Limbic",
+        "description": "Connects the posterior cingulate to the parahippocampal gyrus; involved in memory.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.isthmuscingulate.obj",
+            "right": "models/brain/rh.pial.DK.isthmuscingulate.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "lateraloccipital",
+        "name": "Lateral Occipital Cortex",
+        "latinName": "Cortex occipitalis lateralis",
+        "category": "Occipital Lobe",
+        "description": "Specialized for object recognition.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.lateraloccipital.obj",
+            "right": "models/brain/rh.pial.DK.lateraloccipital.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "lateralorbitofrontal",
+        "name": "Lateral Orbitofrontal Cortex",
+        "latinName": "Cortex orbitofrontalis lateralis",
+        "category": "Frontal Lobe",
+        "description": "Involved in the appropriate handling of sensory inputs and decision making related to reward and punishment.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.lateralorbitofrontal.obj",
+            "right": "models/brain/rh.pial.DK.lateralorbitofrontal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "lingual",
+        "name": "Lingual Gyrus",
+        "latinName": "Gyrus lingualis",
+        "category": "Occipital Lobe",
+        "description": "Linked to processing vision, especially related to letters.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.lingual.obj",
+            "right": "models/brain/rh.pial.DK.lingual.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "medialorbitofrontal",
+        "name": "Medial Orbitofrontal Cortex",
+        "latinName": "Cortex orbitofrontalis medialis",
+        "category": "Frontal Lobe",
+        "description": "Involved in decision making and processing rewards.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.medialorbitofrontal.obj",
+            "right": "models/brain/rh.pial.DK.medialorbitofrontal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "middletemporal",
+        "name": "Middle Temporal Gyrus",
+        "latinName": "Gyrus temporalis medius",
+        "category": "Temporal Lobe",
+        "description": "Involved in contemplating distance, recognition of known faces, and accessing word meaning while reading.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.middletemporal.obj",
+            "right": "models/brain/rh.pial.DK.middletemporal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "paracentral",
+        "name": "Paracentral Lobule",
+        "latinName": "Lobulus paracentralis",
+        "category": "Limbic",
+        "description": "Controls motor and sensory innervations of the contralateral lower extremity.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.paracentral.obj",
+            "right": "models/brain/rh.pial.DK.paracentral.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "parahippocampal",
+        "name": "Parahippocampal Gyrus",
+        "latinName": "Gyrus parahippocampalis",
+        "category": "Limbic",
+        "description": "Plays an important role in memory encoding and retrieval.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.parahippocampal.obj",
+            "right": "models/brain/rh.pial.DK.parahippocampal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "parsopercularis",
+        "name": "Pars Opercularis",
+        "latinName": "Pars opercularis",
+        "category": "Frontal Lobe",
+        "description": "Part of Broca's area, involved in language production.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.parsopercularis.obj",
+            "right": "models/brain/rh.pial.DK.parsopercularis.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "parsorbitalis",
+        "name": "Pars Orbitalis",
+        "latinName": "Pars orbitalis",
+        "category": "Frontal Lobe",
+        "description": "Part of the inferior frontal gyrus, involved in language processing.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.parsorbitalis.obj",
+            "right": "models/brain/rh.pial.DK.parsorbitalis.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "parstriangularis",
+        "name": "Pars Triangularis",
+        "latinName": "Pars triangularis",
+        "category": "Frontal Lobe",
+        "description": "Part of Broca's area, contributes to language processing and production.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.parstriangularis.obj",
+            "right": "models/brain/rh.pial.DK.parstriangularis.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "pericalcarine",
+        "name": "Pericalcarine Cortex",
+        "latinName": "Cortex pericalcarinus",
+        "category": "Occipital Lobe",
+        "description": "Primary visual cortex (V1), handles initial processing of visual information.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.pericalcarine.obj",
+            "right": "models/brain/rh.pial.DK.pericalcarine.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "postcentral",
+        "name": "Postcentral Gyrus",
+        "latinName": "Gyrus postcentralis",
+        "category": "Parietal Lobe",
+        "description": "Primary somatosensory cortex, main sensory receptive area for the sense of touch.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.postcentral.obj",
+            "right": "models/brain/rh.pial.DK.postcentral.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "posteriorcingulate",
+        "name": "Posterior Cingulate Cortex",
+        "latinName": "Cortex cingularis posterior",
+        "category": "Limbic",
+        "description": "A key node in the Default Mode Network, involved in episodic memory and emotional processing.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.posteriorcingulate.obj",
+            "right": "models/brain/rh.pial.DK.posteriorcingulate.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "precentral",
+        "name": "Precentral Gyrus",
+        "latinName": "Gyrus precentralis",
+        "category": "Frontal Lobe",
+        "description": "Primary motor cortex, responsible for controlling voluntary motor movement.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.precentral.obj",
+            "right": "models/brain/rh.pial.DK.precentral.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "precuneus",
+        "name": "Precuneus",
+        "latinName": "Precuneus",
+        "category": "Parietal Lobe",
+        "description": "Involved in episodic memory, visuospatial processing, and self-consciousness.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.precuneus.obj",
+            "right": "models/brain/rh.pial.DK.precuneus.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "rostralanteriorcingulate",
+        "name": "Rostral Anterior Cingulate",
+        "latinName": "Pars rostralis corticis cingularis anterioris",
+        "category": "Limbic",
+        "description": "Involved in emotional regulation and autonomic dysregulation.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.rostralanteriorcingulate.obj",
+            "right": "models/brain/rh.pial.DK.rostralanteriorcingulate.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "rostralmiddlefrontal",
+        "name": "Rostral Middle Frontal Gyrus",
+        "latinName": "Gyrus frontalis medius (pars rostralis)",
+        "category": "Frontal Lobe",
+        "description": "Subdivision of the dorsolateral prefrontal cortex, involved in complex cognitive functions.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.rostralmiddlefrontal.obj",
+            "right": "models/brain/rh.pial.DK.rostralmiddlefrontal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "superiorfrontal",
+        "name": "Superior Frontal Gyrus",
+        "latinName": "Gyrus frontalis superior",
+        "category": "Frontal Lobe",
+        "description": "Involved in self-awareness and coordinating with the sensory system.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.superiorfrontal.obj",
+            "right": "models/brain/rh.pial.DK.superiorfrontal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "superiorparietal",
+        "name": "Superior Parietal Lobule",
+        "latinName": "Lobulus parietalis superior",
+        "category": "Parietal Lobe",
+        "description": "Involved in spatial orientation and combining visual and sensory input.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.superiorparietal.obj",
+            "right": "models/brain/rh.pial.DK.superiorparietal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "superiortemporal",
+        "name": "Superior Temporal Gyrus",
+        "latinName": "Gyrus temporalis superior",
+        "category": "Temporal Lobe",
+        "description": "Contains the primary auditory cortex and Wernicke's area (on the left), crucial for language and sound.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.superiortemporal.obj",
+            "right": "models/brain/rh.pial.DK.superiortemporal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "supramarginal",
+        "name": "Supramarginal Gyrus",
+        "latinName": "Gyrus supramarginalis",
+        "category": "Parietal Lobe",
+        "description": "Involved in language perception and processing.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.supramarginal.obj",
+            "right": "models/brain/rh.pial.DK.supramarginal.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "temporalpole",
+        "name": "Temporal Pole",
+        "latinName": "Polus temporalis",
+        "category": "Temporal Lobe",
+        "description": "Involved in semantic memory, face recognition, and social interactions.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.temporalpole.obj",
+            "right": "models/brain/rh.pial.DK.temporalpole.obj"
+        },
+        "references": []
+    },
+    {
+        "id": "transversetemporal",
+        "name": "Transverse Temporal Gyrus",
+        "latinName": "Gyrus temporalis transversus",
+        "category": "Temporal Lobe",
+        "description": "Also known as Heschl's gyri, contains the primary auditory cortex.",
+        "files": {
+            "left": "models/brain/lh.pial.DK.transversetemporal.obj",
+            "right": "models/brain/rh.pial.DK.transversetemporal.obj"
+        },
+        "references": []
+    }
+]
