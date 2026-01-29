@@ -1,4 +1,5 @@
 
+import { Loader } from './components/UI/Loader';
 import { Scene } from './components/Brain/Scene';
 import { Sidebar } from './components/UI/Sidebar';
 import { Header } from './components/UI/Header';
@@ -10,6 +11,7 @@ function App() {
 
     return (
         <div className="relative w-full h-screen bg-deep-charcoal overflow-hidden">
+            <Loader />
             { }
             <div className="absolute inset-0 z-0 pointer-events-auto">
                 <Scene />
