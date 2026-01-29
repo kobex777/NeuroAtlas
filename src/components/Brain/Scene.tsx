@@ -1,5 +1,5 @@
 import { Canvas, useFrame, ThreeEvent, useThree } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+import { OrbitControls, useGLTF, AdaptiveDpr, AdaptiveEvents } from '@react-three/drei';
 import { EffectComposer, Vignette, Noise, SSAO } from '@react-three/postprocessing';
 import * as THREE from 'three';
 import { useEffect, useMemo, useRef } from 'react';
@@ -273,7 +273,11 @@ export function Scene() {
                 shadows
                 gl={{
                     toneMapping: THREE.ACESFilmicToneMapping,
-                    toneMappingExposure: 0.6
+                    toneMappingExposure: 0.6,
+                    powerPreference: "high-performance",
+                    antialias: false,
+                    stencil: false,
+                    depth: true
                 }}
             >
                 { }
@@ -322,6 +326,10 @@ export function Scene() {
 
                 { }
                 <CameraRig />
+
+                { }
+                <AdaptiveDpr pixelated />
+                <AdaptiveEvents />
 
                 { }
                 <OrbitControls
