@@ -5,7 +5,7 @@ export function Header() {
         <header className="w-full pt-4 flex flex-col items-center justify-center select-none z-20 pointer-events-none">
             <div className="flex flex-col items-center group cursor-default pointer-events-auto">
                 <div className="logo-container relative inline-flex items-center">
-                    <h1 className="text-2xl font-display font-medium text-lab-text tracking-tight logo-text">NeuroAtlas</h1>
+                    <h1 className="text-2xl font-display font-medium text-white tracking-tight logo-text">NeuroAtlas</h1>
                 </div>
                 <div className="flex items-center gap-2 mt-0.5">
                     <div className="h-[1px] w-3 bg-gradient-to-r from-transparent to-primary/30"></div>

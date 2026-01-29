@@ -11,15 +11,17 @@ import { BRAIN_COLORS } from './BrainConfig';
 import * as BufferGeometryUtils from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 
 
-const BACKGROUND_COLOR = '#b0b0b0'; 
-const NOISE_OPACITY = 0.8; 
+const BACKGROUND_COLOR = '#b0b0b0';
+const NOISE_OPACITY = 0.8;
 
 
 import brainRegions from '../../data/brainRegions.json';
 import pathologies from '../../data/pathologies.json';
 
 function BrainModel() {
-    const { scene } = useGLTF('/brain.glb');
+    // Configure Draco loader
+    useGLTF.preload('/brain.glb', true)
+    const { scene } = useGLTF('/brain.glb', true) as any;
     const {
         hoveredRegionId,
         selectedRegionId,
@@ -28,18 +30,18 @@ function BrainModel() {
         selectRegion
     } = useBrainStore();
 
-    
+
     const baseMaterial = useMemo(() => {
         return new GradientClayMaterial();
     }, []);
 
-    
+
     const getRegionIdFromMeshName = (meshName: string) => {
         const region = brainRegions.find(r => meshName.includes(r.id));
         return region ? region.id : null;
     };
 
-    
+
     const getRegionImpact = (id: string | null) => {
         if (!id) return null;
         if (activePathologyId) {
@@ -70,9 +72,9 @@ function BrainModel() {
     };
 
     useEffect(() => {
-        scene.traverse((child) => {
+        scene.traverse((child: THREE.Object3D) => {
             if (child instanceof THREE.Mesh) {
-                
+
                 if (child.geometry && !child.userData.hasSmoothed) {
                     try {
                         child.geometry.deleteAttribute('normal');
@@ -88,7 +90,7 @@ function BrainModel() {
                 child.castShadow = true;
                 child.receiveShadow = true;
 
-                
+
                 const regionId = getRegionIdFromMeshName(child.name);
                 child.userData.regionId = regionId;
             }
@@ -96,7 +98,7 @@ function BrainModel() {
     }, [scene, baseMaterial]);
 
     useFrame((_state, delta) => {
-        scene.traverse((child) => {
+        scene.traverse((child: THREE.Object3D) => {
             if (child instanceof THREE.Mesh && child.material) {
                 const regionId = child.userData.regionId;
 
@@ -105,7 +107,7 @@ function BrainModel() {
                 const isHighlighted = isRegionHighlighted(regionId);
                 let isDimmed = isRegionDimmed(regionId);
 
-                
+
                 if (regionId === null && (activePathologyId || selectedRegionId)) {
                     isDimmed = true;
                 }
@@ -115,17 +117,17 @@ function BrainModel() {
 
                 if (isHighlighted) {
                     if (activePathologyId && impact) {
-                        
+
                         const color = BRAIN_COLORS.impact[impact as keyof typeof BRAIN_COLORS.impact] || BRAIN_COLORS.impact.low;
                         targetCenter = color;
                         targetEdge = color;
                     } else {
-                        
+
                         targetCenter = BRAIN_COLORS.selected;
                         targetEdge = BRAIN_COLORS.selected;
                     }
                 } else if (isDimmed) {
-                    targetCenter = new THREE.Color('#e0e0e0'); 
+                    targetCenter = new THREE.Color('#e0e0e0');
                     targetEdge = new THREE.Color('#d6d6d6');
                 }
 
@@ -134,9 +136,9 @@ function BrainModel() {
                     targetEdge = BRAIN_COLORS.hover.edge;
                 }
 
-                
+
                 easing.dampC(child.material.uColorCenter, targetCenter, 0.25, delta);
-                
+
                 easing.dampC(child.material.uColorEdge, targetEdge, 0.25, delta);
             }
         });
@@ -162,14 +164,14 @@ function BrainModel() {
             onClick={(e: ThreeEvent<MouseEvent>) => {
                 e.stopPropagation();
                 if (e.object && e.object.userData.regionId) {
-                    
+
                     if (selectedRegionId === e.object.userData.regionId) {
-                        selectRegion(null); 
+                        selectRegion(null);
                     } else {
                         selectRegion(e.object.userData.regionId);
                     }
                 } else {
-                    selectRegion(null); 
+                    selectRegion(null);
                 }
             }}
             onPointerMissed={() => selectRegion(null)}
@@ -181,12 +183,12 @@ function CameraRig() {
     const { selectedRegionId, activePathologyId } = useBrainStore();
     const { scene } = useThree();
     const target = useMemo(() => new THREE.Vector3(0, 0, 0), []);
-    const cameraPos = useMemo(() => new THREE.Vector3(0, 200, 600), []); 
+    const cameraPos = useMemo(() => new THREE.Vector3(0, 200, 600), []);
     const isFocusing = useRef(false);
     const timeoutRef = useRef<number | null>(null);
 
     useEffect(() => {
-        
+
         if (selectedRegionId || activePathologyId) {
             isFocusing.current = true;
             if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -194,7 +196,7 @@ function CameraRig() {
                 isFocusing.current = false;
             }, 1000);
         } else {
-            
+
             isFocusing.current = true;
             if (timeoutRef.current) clearTimeout(timeoutRef.current);
             timeoutRef.current = window.setTimeout(() => {
@@ -230,13 +232,13 @@ function CameraRig() {
 
             box.getCenter(target);
 
-            
+
             const direction = target.clone().normalize();
             if (direction.lengthSq() < 0.001) {
                 direction.set(0, 0, 1);
             }
 
-            
+
             const distance = 450;
             cameraPos.copy(direction.multiplyScalar(distance));
         }
@@ -251,9 +253,9 @@ function CameraRig() {
 
         const controls = state.controls as any;
         if (controls && controls.target) {
-            
+
             easing.damp3(controls.target, target, 0.25, delta);
-            
+
             easing.damp3(state.camera.position, cameraPos, 0.25, delta);
         }
     });
@@ -268,89 +270,89 @@ export function Scene() {
         <div className="w-full h-full relative z-10">
             <Canvas
                 camera={{ position: [0, 0, 600], fov: 45 }}
-                shadows 
+                shadows
                 gl={{
                     toneMapping: THREE.ACESFilmicToneMapping,
-                    toneMappingExposure: 0.6 
+                    toneMappingExposure: 0.6
                 }}
             >
-                {}
+                { }
                 <hemisphereLight
-                    color={'#f5faff'} 
-                    groundColor={'#c4b7a6'} 
-                    intensity={0.5} 
+                    color={'#f5faff'}
+                    groundColor={'#c4b7a6'}
+                    intensity={0.5}
                 />
 
-                {}
+                { }
                 <directionalLight
                     position={[0, 200, 600]}
-                    intensity={1.0} 
+                    intensity={1.0}
                     castShadow
-                    shadow-mapSize={[2048, 2048]}
+                    shadow-mapSize={[1024, 1024]}
                     shadow-bias={-0.0001}
                     shadow-radius={10}
                 />
 
-                {}
+                { }
                 <directionalLight
                     position={[0, -200, 600]}
                     intensity={1.0}
                     castShadow
-                    shadow-mapSize={[2048, 2048]}
+                    shadow-mapSize={[1024, 1024]}
                     shadow-bias={-0.0001}
                     shadow-radius={10}
                 />
 
-                {}
+                { }
                 <directionalLight
                     position={[0, 200, -600]}
                     intensity={1.0}
                     castShadow
-                    shadow-mapSize={[2048, 2048]}
+                    shadow-mapSize={[1024, 1024]}
                     shadow-bias={-0.0001}
                     shadow-radius={10}
                 />
 
-                {}
+                { }
                 <color attach="background" args={[BACKGROUND_COLOR]} />
                 <fog attach="fog" args={[BACKGROUND_COLOR, 500, 1500]} />
 
-                {}
+                { }
                 <BrainModel />
 
-                {}
+                { }
                 <CameraRig />
 
-                {}
+                { }
                 <OrbitControls
                     makeDefault
                     enablePan={false}
                     enableZoom={true}
                     minDistance={200}
                     maxDistance={850}
-                    autoRotate={isRotationEnabled && !selectedRegionId} 
+                    autoRotate={isRotationEnabled && !selectedRegionId}
                     autoRotateSpeed={0.5}
                 />
 
-                {}
+                { }
                 <EffectComposer enableNormalPass>
                     <>
-                        {}
+                        { }
                         <SSAO
                             radius={0.4}
                             intensity={70}
                             luminanceInfluence={0.6}
-                            color={new THREE.Color('#4a2c0f')} 
+                            color={new THREE.Color('#4a2c0f')}
                             worldDistanceThreshold={1.0}
                             worldDistanceFalloff={0.1}
                             worldProximityThreshold={1.0}
                             worldProximityFalloff={0.1}
                         />
 
-                        {}
+                        { }
                         <Noise opacity={NOISE_OPACITY} premultiply />
 
-                        {}
+                        { }
                         <Vignette eskil={false} offset={0.1} darkness={0.9} />
                     </>
                 </EffectComposer>
