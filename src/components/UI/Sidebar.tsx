@@ -6,9 +6,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 
 const IMPACT_COLORS = {
-    high: { bg: 'bg-red-400/10', text: 'text-red-200', border: 'border-red-300/20' }, 
-    medium: { bg: 'bg-yellow-300/10', text: 'text-yellow-200', border: 'border-yellow-200/20' }, 
-    low: { bg: 'bg-orange-300/10', text: 'text-orange-200', border: 'border-orange-300/20' } 
+    high: { bg: 'bg-red-400/10', text: 'text-red-200', border: 'border-red-300/20' },
+    medium: { bg: 'bg-yellow-300/10', text: 'text-yellow-200', border: 'border-yellow-200/20' },
+    low: { bg: 'bg-orange-300/10', text: 'text-orange-200', border: 'border-orange-300/20' }
 };
 
 export function Sidebar() {
@@ -22,7 +22,7 @@ export function Sidebar() {
         toggleSidebar
     } = useBrainStore();
 
-    
+
     const selectedRegion = useMemo(() =>
         brainRegions.find(r => r.id === selectedRegionId),
         [selectedRegionId]);
@@ -31,21 +31,21 @@ export function Sidebar() {
         pathologies.find(p => p.id === activePathologyId),
         [activePathologyId]);
 
-    
+
     const hierarchy = useMemo(() => {
         const tree: Record<string, Record<string, Record<string, typeof pathologies>>> = {};
 
-        
+
         const currentPathologies = searchTerm
             ? pathologies.filter(p => p.name.toLowerCase().includes(searchTerm.toLowerCase()))
             : pathologies;
 
         currentPathologies.forEach(pathology => {
-            
+
             const main = pathology.mainCategory || 'Other';
-            
+
             const sub = pathology.subCategory || 'General';
-            
+
             const group = pathology.group || 'Miscellaneous';
 
             if (!tree[main]) tree[main] = {};
@@ -58,9 +58,9 @@ export function Sidebar() {
         return tree;
     }, [searchTerm]);
 
-    
+
     const sidebarVariants = {
-        open: { width: "22rem" }, 
+        open: { width: "22rem" },
         closed: { width: "1.25rem" }
     };
 
@@ -80,7 +80,7 @@ export function Sidebar() {
         >
             <AnimatePresence mode="wait">
                 {!isSidebarOpen ? (
-                    
+
                     <motion.div
                         key="collapsed"
                         variants={contentVariants}
@@ -98,7 +98,7 @@ export function Sidebar() {
                         </button>
                     </motion.div>
                 ) : (
-                    
+
                     <motion.div
                         key="open"
                         variants={contentVariants}
@@ -170,8 +170,8 @@ function DetailView({ item, isPathology, selectRegion, setPathology }: any) {
                         <div className="flex flex-col gap-2">
                             {item.affectedRegions.map((region: any, i: number) => {
                                 const rName = brainRegions.find(br => br.id === region.id)?.name || region.id;
-                                
-                                const style = IMPACT_COLORS[region.impact] || IMPACT_COLORS.low;
+
+                                const style = IMPACT_COLORS[region.impact as keyof typeof IMPACT_COLORS] || IMPACT_COLORS.low;
 
                                 return (
                                     <div key={i} className={`flex items-center justify-between px-3 py-2 rounded border ${style.bg} ${style.border}`}>

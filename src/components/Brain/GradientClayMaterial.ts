@@ -1,5 +1,5 @@
 import { shaderMaterial } from '@react-three/drei';
-import * as THREE from 'three';
+
 import { extend } from '@react-three/fiber';
 import { BRAIN_COLORS, LIGHT_SETTINGS } from './BrainConfig';
 
@@ -12,7 +12,7 @@ const GradientClayMaterial = shaderMaterial(
         uBackLightPos: LIGHT_SETTINGS.back.position,
         uNoiseScale: 2.0,
     },
-    
+
     `
     varying vec3 vNormal;
     varying vec3 vWorldPosition;
@@ -29,7 +29,7 @@ const GradientClayMaterial = shaderMaterial(
       gl_Position = projectionMatrix * mvPosition;
     }
     `,
-    
+
     `
     uniform vec3 uColorCenter;
     uniform vec3 uColorEdge;
